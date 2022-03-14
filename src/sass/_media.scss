@@ -1,4 +1,4 @@
-@use "variables";
+@use "variables" as *;
 
 // Tablets & Smaller
 @media (max-width: 800px) {
@@ -25,7 +25,7 @@
   #header {
     &-home {
       height: 10rem;
-      border-bottom: 3px solid variables.$main-color;
+      border-bottom: 3px solid $main-color;
       background-position: 20% 30%;
       .header-content {
         display: none;
@@ -51,7 +51,7 @@
   #home {
     &-a {
       .specials div {
-        border-bottom: 1px variables.$light-color solid;
+        border-bottom: 1px $light-color solid;
         padding-bottom: 1rem;
 
         &:last-child {

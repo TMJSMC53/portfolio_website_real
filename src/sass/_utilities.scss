@@ -1,7 +1,7 @@
-@use "variables";
+@use "variables" as *;
 
 .container {
-  max-width: variables.$website-width;
+  max-width: $website-width;
   padding: 0 1.5rem;
   margin: auto;
   overflow: hidden;
@@ -20,45 +20,45 @@
   &-main {
     @extend %btn-shared;
     color: #333;
-    background-color: variables.$main-color;
+    background-color: $main-color;
   }
 
   &-light {
     @extend %btn-shared;
     color: #333;
-    background-color: variables.$light-color;
+    background-color: $light-color;
   }
 
   &-dark {
     @extend %btn-shared;
     color: #f4f4f4;
-    background-color: variables.$dark-color;
+    background-color: $dark-color;
   }
 }
 
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: variables.$main-color;
+  background-color: $main-color;
 }
 
 // Backgrounds
 .bg {
   &-main {
-    background: variables.$main-color;
-    color: set-text-color(variables.$main-color);
+    background: $main-color;
+    color: set-text-color($main-color);
   }
   &-dark {
-    background: variables.$dark-color;
-    color: set-text-color(variables.$dark-color);
+    background: $dark-color;
+    color: set-text-color($dark-color);
   }
   &-light {
-    background: variables.$light-color;
-    color: set-text-color(variables.$light-color);
+    background: $light-color;
+    color: set-text-color($light-color);
   }
   &-medium {
-    background: variables.$medium-color;
-    color: set-text-color(variables.$medium-color);
+    background: $medium-color;
+    color: set-text-color($medium-color);
   }
 }
 
@@ -114,7 +114,7 @@ input[class^="btn-"]:hover {
 .bottom-line {
   height: 2px;
   width: 3rem;
-  background: variables.$main-color;
+  background: $main-color;
   display: block;
   margin: 0 auto 1rem auto;
 }
